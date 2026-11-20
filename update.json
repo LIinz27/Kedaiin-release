@@ -1,14 +1,25 @@
 {
   "schema": 1,
   "latest": {
-    "version": "1.2.0",
-    "build": "ca21782",
-    "released_at": "2026-11-20T00:00:00Z",
-    "size": 13837631,
-    "sha256": "cc38b5da656d6d3b8eedbd04bb2ce7e7b555726a284d45435c5b5b8c4d5d050d",
-    "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.0/kedaiin-update-1.2.0.zip",
-    "notes": "Sistem desain baru, 7 layar redesain",
+    "version": "1.2.1",
+    "build": "3d6ebf1",
+    "released_at": "2026-11-20T14:39:00Z",
+    "size": 13847165,
+    "sha256": "2acfc02874d59884a84f98caacbd4a7dc3c1e0e842fbeaec9bd1bc6b31a25f21",
+    "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.1/kedaiin-update-1.2.1.zip",
+    "notes": "Perbaikan refund & diskon void, kegagalan cetak tidak ditelan, expected_cash tunai tanpa shift, seksi Pembaruan di UI, cek versi lewat feed publik",
     "min_from_version": "1.1.0"
   },
-  "history": []
+  "history": [
+    {
+      "version": "1.2.0",
+      "build": "ca21782",
+      "released_at": "2026-11-20T00:00:00Z",
+      "size": 13837631,
+      "sha256": "cc38b5da656d6d3b8eedbd04bb2ce7e7b555726a284d45435c5b5b8c4d5d050d",
+      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.0/kedaiin-update-1.2.0.zip",
+      "notes": "Sistem desain baru, 7 layar redesain",
+      "min_from_version": "1.1.0"
+    }
+  ]
 }
