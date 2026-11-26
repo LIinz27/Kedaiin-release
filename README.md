@@ -35,16 +35,17 @@ Isi `update.json` (schema 1):
 
 Server menolak paket yang isinya tidak cocok dengan `manifest.json` di dalam zip. `size` dan `sha256` di feed dipakai memeriksa berkas yang **diunduh**, bukan untuk memasang.
 
-## 2. Rilis terbaru — 1.2.1
+## 2. Rilis terbaru — 1.2.2
 | | |
 |---|---|
-| Versi | **1.2.1** |
-| Build | **3d6ebf1** |
-| Dirilis | **2026-11-20 14:39 UTC** (20 Nov 2026, 22:39 WITA) |
-| Ukuran paket | **13.847.165 byte** (13,2 MB) |
-| SHA-256 | `2acfc02874d59884a84f98caacbd4a7dc3c1e0e842fbeaec9bd1bc6b31a25f21` |
+| Versi | **1.2.2** |
+| Build | **fd0c5dc** |
+| Dirilis | **2026-11-26 05:32 UTC** (26 Nov 2026, 13:32 WITA) |
+| Ukuran paket | **13.843.666 byte** (13,2 MB) |
+| SHA-256 | `c8c2f5256191db685aca809ddfe7f84dd26f6571dee19daae82bed05680a4de0` |
 | `min_from_version` | **1.1.0** |
-| Unduhan | [kedaiin-update-1.2.1.zip](https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.1/kedaiin-update-1.2.1.zip) |
+| Unduhan | [kedaiin-update-1.2.2.zip](https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.2/kedaiin-update-1.2.2.zip) |
+| Catatan rilis | [§9.1](#91-rilis-122-26-november-2026) — kartu **Tidak terjual** di tab Ringkasan, keterangan saat CSV kosong, batas angka di 7 endpoint, tab Laporan bisa dipindah dengan keyboard |
 
 **Arti `min_from_version` 1.1.0:** instalasi **1.1.0 ke atas** boleh langsung memakai paket ini. Instalasi di bawah 1.1.0 naik lewat installer versi baru, bukan paket zip.
 
@@ -55,12 +56,12 @@ Server menolak paket yang isinya tidak cocok dengan `manifest.json` di dalam zip
 | **1.2.1** | `3d6ebf1` | 2026-11-20 14:39 | 13.847.165 | `2acfc02874d59884a84f98caacbd4a7dc3c1e0e842fbeaec9bd1bc6b31a25f21` | [unduh](https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.1/kedaiin-update-1.2.1.zip) |
 | **1.2.0** | `ca21782` | 2026-11-20 00:00 | 13.837.631 | `cc38b5da656d6d3b8eedbd04bb2ce7e7b555726a284d45435c5b5b8c4d5d050d` | [unduh](https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.0/kedaiin-update-1.2.0.zip) |
 
-Rilis 1.2.0 berisi sistem desain baru dan tujuh layar yang didesain ulang. Rilis 1.2.1 berisi perbaikan uang, perbaikan cetak, dan alat pembaruan itu sendiri (§9). Daftar lengkap: [halaman Releases](https://github.com/LIinz27/Kedaiin-release/releases).
+Rilis 1.2.0 berisi sistem desain baru dan tujuh layar yang didesain ulang. Rilis 1.2.1 berisi perbaikan uang, perbaikan cetak, dan alat pembaruan itu sendiri (§9.2). Rilis 1.2.2 berisi perbaikan laporan, plafon angka, dan aksesibilitas tab Laporan (§9.1). Daftar lengkap: [halaman Releases](https://github.com/LIinz27/Kedaiin-release/releases).
 
 ## 4. Isi paket pembaruan
 Zip berisi dua hal di root: `manifest.json` (versi, build, daftar berkas + ukuran + sha256 tiap berkas) dan folder `app/` (kode server + build web + dependensi, siap salin).
 
-Paket 1.2.1 bila dibuka: **1.973 berkas**, **±27,8 MB** setelah diekstrak (13,2 MB terkompresi).
+Paket 1.2.2 bila dibuka: **1.951 berkas** + `manifest.json`, **29.517.055 byte** setelah diekstrak (±28,1 MB; 13,2 MB terkompresi).
 
 | Bagian | Saat paket dipasang |
 |---|---|
@@ -70,19 +71,19 @@ Paket 1.2.1 bila dibuka: **1.973 berkas**, **±27,8 MB** setelah diekstrak (13,2
 | `.env` | **tidak disentuh** — kunci acak instalasi |
 | `logs\` | **tidak disentuh** — riwayat untuk penelusuran |
 | Runtime Node + pm2 | **tidak ikut** — paket update hanya kode aplikasi; runtime urusan installer |
-| Berkas dev (`app/.tmp-verify/`, `app/.opencode/`) | ikut terbawa di paket 1.2.1; tidak dipakai saat aplikasi jalan, bersihkan di paket berikutnya |
+| Berkas dev (`app/.opencode/`) | ikut terbawa di paket 1.2.2 (5 berkas; `.tmp-verify/` sudah tidak ada); tidak dipakai saat aplikasi jalan, bersihkan di paket berikutnya |
 
 ## 5. Cara memasang pembaruan
 Dua jalur, isinya sama: paket `.zip` diverifikasi di dalam aplikasi, disimpan, lalu dipasang oleh teknisi.
 
 ### 5.1 Jalur A — dari dalam aplikasi (server punya internet)
-1. Unduh `kedaiin-update-1.2.1.zip` dari tautan §2 — boleh di PC mana pun, boleh langsung di PC server.
+1. Unduh `kedaiin-update-1.2.2.zip` dari tautan §2 — boleh di PC mana pun, boleh langsung di PC server.
 2. Verifikasi checksum-nya (§6). **Jangan lewati langkah ini.**
 3. Di PC server buka `http://<ip-server>:3000` (atau `Kedaiin.exe`), login sebagai **owner** atau **admin**.
 4. **Pengaturan** → gulir ke paling bawah → seksi **Pembaruan**.
-5. **Pilih paket pembaruan…** → pilih berkas `.zip`. Berkas langsung diperiksa terhadap `manifest.json` di dalamnya: tiap berkas harus ada, ukurannya sama, sha256-nya sama. Bila lolos, layar menulis **Paket 1.2.1 (build 3d6ebf1) lolos verifikasi** beserta jumlah berkas dan ukurannya. Bila gagal, muncul daftar masalah: `hilang: …`, `ekstra: …`, `ukuran beda: …`, `sha256 beda: …`.
+5. **Pilih paket pembaruan…** → pilih berkas `.zip`. Berkas langsung diperiksa terhadap `manifest.json` di dalamnya: tiap berkas harus ada, ukurannya sama, sha256-nya sama. Bila lolos, layar menulis **Paket 1.2.2 (build fd0c5dc) lolos verifikasi** beserta jumlah berkas dan ukurannya. Bila gagal, muncul daftar masalah: `hilang: …`, `ekstra: …`, `ukuran beda: …`, `sha256 beda: …`.
 6. **Simpan untuk dipasang** — tombol ini hanya hidup untuk **owner**. Paket ditolak kalau masih ada bill terbuka atau shift kasir masih berjalan.
-7. Muncul kotak **Pembaruan 1.2.1 siap dipasang** beserta tombol **Batalkan**. Paket tersimpan di `C:\kedaiin\data\updates\pending`.
+7. Muncul kotak **Pembaruan 1.2.2 siap dipasang** beserta tombol **Batalkan**. Paket tersimpan di `C:\kedaiin\data\updates\pending`.
 8. Pemasangan dilakukan teknisi (§5.4). Batas ukuran berkas: **80 MB**; selain `.zip` tidak bisa dipilih.
 
 ### 5.2 Jalur B — offline / USB (server tanpa internet)
@@ -116,9 +117,9 @@ powershell -NoProfile -ExecutionPolicy Bypass `
 
 Urutan kerja skrip: backup dulu → salin berkas versi baru → `npm ci` → build web → `pm2 restart kedaiin-pos` → cek `/health`. `data\`, `backup\`, `.env`, `logs\`, `.pm2` tidak pernah ditimpa.
 
-**b. Installer versi baru** (`Kedaiin-Setup-1.2.1.exe`, disimpan lokal oleh penjual, tidak di repo ini). Dipasang **di atas** instalasi lama; folder data, backup, log, dan `.env` dikecualikan. Pakai cara ini kalau runtime Node/WebView2 ikut berubah, atau saat pasang dari nol.
+**b. Installer versi baru** (`Kedaiin-Setup-1.2.2.exe`, disimpan lokal oleh penjual, tidak di repo ini; checksumnya di §6). Dipasang **di atas** instalasi lama; folder data, backup, log, dan `.env` dikecualikan. Pakai cara ini kalau runtime Node/WebView2 ikut berubah, atau saat pasang dari nol.
 
-Sesudah salah satu cara di atas, `curl.exe http://localhost:3000/health` harus menjawab `{"ok":true,"build":"3d6ebf1","storage":"ok"}`. Kalau `build` masih `ca21782`, pemasangan belum terjadi.
+Sesudah salah satu cara di atas, `curl.exe http://localhost:3000/health` harus menjawab `{"ok":true,"build":"fd0c5dc","storage":"ok"}`. Kalau `build` masih `3d6ebf1`, pemasangan belum terjadi.
 
 ### 5.5 Kalau versi baru bermasalah (rollback)
 ```powershell
@@ -135,28 +136,33 @@ Checksum memastikan berkas yang Anda pegang sama persis dengan yang diterbitkan.
 **Linux / macOS:**
 
 ```bash
-curl -L -o kedaiin-update-1.2.1.zip \
-  https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.1/kedaiin-update-1.2.1.zip
-sha256sum kedaiin-update-1.2.1.zip
+curl -L -o kedaiin-update-1.2.2.zip \
+  https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.2/kedaiin-update-1.2.2.zip
+sha256sum kedaiin-update-1.2.2.zip
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-curl.exe -L -o kedaiin-update-1.2.1.zip `
-  https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.1/kedaiin-update-1.2.1.zip
-Get-FileHash .\kedaiin-update-1.2.1.zip -Algorithm SHA256
+curl.exe -L -o kedaiin-update-1.2.2.zip `
+  https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.2/kedaiin-update-1.2.2.zip
+Get-FileHash .\kedaiin-update-1.2.2.zip -Algorithm SHA256
 ```
 
 | Berkas | SHA-256 |
 |---|---|
+| `kedaiin-update-1.2.2.zip` | `c8c2f5256191db685aca809ddfe7f84dd26f6571dee19daae82bed05680a4de0` |
 | `kedaiin-update-1.2.1.zip` | `2acfc02874d59884a84f98caacbd4a7dc3c1e0e842fbeaec9bd1bc6b31a25f21` |
 | `kedaiin-update-1.2.0.zip` | `cc38b5da656d6d3b8eedbd04bb2ce7e7b555726a284d45435c5b5b8c4d5d050d` |
-| `kedaiin-pos.apk` (1.2.1) | `043b649e3611b33e0677a48ac77c016e0e4e28d8ce586bc3abe5e54b8c29dd2e` |
+| `kedaiin-pos.apk` (1.2.2) | `a6dbab09f51c87ecb61e2f5bf694e650aef5aafe419a1dc7eb008d749b894b6d` |
+| `Kedaiin-Setup-1.2.2.exe` (installer full, dari penjual) | `60f4c6b3eee1026a03dfd95c831e36c469f329aa50a1d1caa0945027cbb14d1a` |
+| `Kedaiin-Setup-1.2.2-slim.exe` (installer slim, dari penjual) | `9c770a5c1c3ad0dffedf3718da19bb9f5f39c5ea8028d3c752582da224e0f7a0` |
 
-APK juga punya MD5 `64d6fa14c7dd3e5fbcaee0c435757d74` — berguna kalau tablet hanya menyediakan alat MD5 (`Get-FileHash .\kedaiin-pos.apk -Algorithm MD5`).
+APK juga punya MD5 `10afb1f6056ddb584b67407b11d28f08` — berguna kalau tablet hanya menyediakan alat MD5 (`Get-FileHash .\kedaiin-pos.apk -Algorithm MD5`).
 
-Ukuran berkas harus sama dengan `size` di `update.json` (13.847.165 byte untuk 1.2.1). Ukuran beda = unduhan terpotong, ulangi.
+Installer **tidak** diunggah ke repo ini — minta ke penjual; ukurannya 334.755.715 byte (full) dan 42.261.460 byte (slim).
+
+Ukuran berkas harus sama dengan `size` di `update.json` (13.843.666 byte untuk 1.2.2). Ukuran beda = unduhan terpotong, ulangi.
 
 ## 7. Persyaratan server
 | Perlu | Keterangan |
@@ -181,20 +187,44 @@ Satu resto = satu PC server. PC itu menyimpan seluruh data dan melayani PC/table
 
 **`Kedaiin.exe`** dipasang installer di PC; ikon desktop membuka layar resto tanpa address bar browser. Alamat server diisi saat pemasangan mode **Klien** (mis. `http://192.168.1.10:3000`). Kalau PC hanya dipakai sesekali, cukup buka alamat server di browser — bedanya hanya pembungkus jendela.
 
-**APK tablet** dilayani dari server resto, **bukan** dari repo ini: `http://<ip-server>:3000/apk` — halaman itu menampilkan QR code dan tombol **Unduh APK**. Berkas 1.2.1:
+**APK tablet** dilayani dari server resto, **bukan** dari repo ini: `http://<ip-server>:3000/apk` — halaman itu menampilkan QR code dan tombol **Unduh APK**. Berkas 1.2.2:
 
 | | |
 |---|---|
 | Berkas | `kedaiin-pos.apk` |
-| Ukuran | **17.484.554 byte** |
-| MD5 | `64d6fa14c7dd3e5fbcaee0c435757d74` |
-| SHA-256 | `043b649e3611b33e0677a48ac77c016e0e4e28d8ce586bc3abe5e54b8c29dd2e` |
-| `versionName` / `versionCode` | **1.2.1** / **2** |
+| Ukuran | **17.484.426 byte** |
+| MD5 | `10afb1f6056ddb584b67407b11d28f08` |
+| SHA-256 | `a6dbab09f51c87ecb61e2f5bf694e650aef5aafe419a1dc7eb008d749b894b6d` |
+| `versionName` / `versionCode` | **1.2.2** / **3** |
 | Package | `id.kedaiin.pos` |
 
 **APK harus di-build ulang setiap rilis web.** Memperbarui server **tidak** memperbarui APK yang sudah terpasang di tablet: berkas APK baru disalin ke server (menggantikan `kedaiin-pos.apk`), lalu tablet memasang ulang lewat `/apk`. Kalau berkas APK di server diganti, checksum di atas **tidak berlaku lagi** — hitung ulang dari berkas yang benar-benar dilayani server.
 
-## 9. Catatan rilis 1.2.1
+## 9. Catatan rilis
+
+### 9.1 Rilis 1.2.2 (26 November 2026)
+Dirilis 26 November 2026, build `fd0c5dc`. Ringkasan: laporan penjualan bisa dipakai tanpa mouse, dan daftar menu **Tidak terjual** kini langsung terlihat di tab Ringkasan. Struktur data tidak berubah — cukup perbarui aplikasi.
+
+**Baru**
+- **Kartu "Tidak terjual" di tab Ringkasan** — sebelumnya terkubur di dasar tab Laba, kini jadi kartu sendiri di tab pertama supaya menu yang tidak laku cepat ketahuan (`bd4d8a7`). Tidak ada fitur baru lain di 1.2.2; sisanya perbaikan dan pekerjaan rilis.
+
+**Perbaikan**
+- **Laporan menyebut alasannya saat CSV kosong** — kalau rentang tanggal tidak ada datanya, keterangan di bawah filter menulis *Tidak ada data pada rentang ini — CSV kosong*, bukan tombol unduh yang mati tanpa penjelasan (`bd4d8a7`).
+- **Angka mustahil ditolak dengan pesan jelas** — batas atas dipasang di 7 endpoint: baris order maks 200, qty per baris maks 1.000, kas awal/akhir shift maks Rp1.000.000.000, penyesuaian stok maks 100.000, urutan (`sort`) maks 10.000, `min_select` dan `max_select` maks 100 (`e042b57`). Salah ketik tidak lagi tersimpan sebagai data rusak.
+
+**Aksesibilitas**
+- **Tab Laporan bisa dipindah dengan keyboard** — panah kiri/kanan berpindah tab sekaligus memilihnya, Home ke tab pertama, End ke tab terakhir, memutar di ujung; hanya tab aktif yang masuk urutan Tab (`bd4d8a7`).
+
+**Teknis & uji**
+- **7 test batas baru** untuk plafon di atas, menutup sel test-plan 0 `[BELUM]` (`e042b57`).
+- **Path proyek disamakan** ke `~/projects/kedaiin/app` di dokumen dan skrip (`170c44e`).
+- **Versi satu sumber** — `version.json` jadi acuan tunggal; `scripts/set-version.mjs` menulis 4 tempat (AppVersion, VersionInfoVersion, gradle `versionName`/`versionCode`, `package.json`) dan `--check` gagal kalau ada yang tidak cocok (`ac71c87`).
+- **Versi 1.2.2** — `version.json` 1.2.2 / code 3 / dirilis 2026-11-26; `set-version --check` 4/4 tempat cocok (`fd0c5dc`).
+- **Catatan jujur:** `manifest.json` di dalam zip tidak mengisi `min_from_version` (sama seperti 1.2.1). Penegakan versi minimum hanya lewat `update.json` di feed.
+
+**Yang berubah bagi pengguna:** tab Laporan dipindah dengan panah kiri/kanan, Home/End; kartu **Tidak terjual** kini di Ringkasan, bukan lagi di bawah tab Laba. Tablet harus dipasang ulang APK-nya supaya ikut 1.2.2 (§8) — memperbarui server tidak memperbarui APK yang sudah terpasang.
+
+### 9.2 Rilis 1.2.1 (20 November 2026)
 Dirilis 20 November 2026, build `3d6ebf1`. Ringkasan: perbaikan uang (refund, diskon void, tunai tanpa shift), kegagalan cetak tidak lagi disembunyikan, dan alat pembaruan (seksi Pembaruan + feed publik).
 
 **Baru**
@@ -216,7 +246,7 @@ Dirilis 20 November 2026, build `3d6ebf1`. Ringkasan: perbaikan uang (refund, di
 - **README repo kode** ditulis ulang (`68eb9a7`).
 - **Bump versi** 1.2.1 (`3d6ebf1`).
 
-Batas yang masih berlaku dan perlu diketahui pembeli: pemasangan pembaruan **belum otomatis** — paket hanya diperiksa dan disimpan (§5.4).
+Batas yang masih berlaku untuk kedua rilis dan perlu diketahui pembeli: pemasangan pembaruan **belum otomatis** — paket hanya diperiksa dan disimpan (§5.4).
 
 ## 10. Dukungan
 | | |
@@ -226,7 +256,7 @@ Batas yang masih berlaku dan perlu diketahui pembeli: pemasangan pembaruan **bel
 
 Saat melapor bug, sertakan empat hal ini supaya masalah bisa ditelusuri tanpa bolak-balik — dan jangan kirim database atau `.env` lewat WhatsApp:
 
-1. **Versi & build** — baris pertama seksi **Pengaturan → Pembaruan** (contoh: *Versi terpasang 1.2.1 · build 3d6ebf1*).
+1. **Versi & build** — baris pertama seksi **Pengaturan → Pembaruan** (contoh: *Versi terpasang 1.2.2 · build fd0c5dc*).
 2. **Keluaran `/health`** di PC server — `curl.exe http://localhost:3000/health` (PowerShell 5.1: pakai `curl.exe`, bukan `curl`). Jawabannya memuat `build` (commit yang sedang jalan) dan `storage` (`ok` = folder data bisa ditulis).
 3. **Log server**, 30 baris terakhir: `$env:PM2_HOME='C:\kedaiin\.pm2'` lalu `pm2 logs kedaiin-pos --lines 30`.
 4. **Apa yang dilakukan sebelum masalah muncul** — tombol yang ditekan, pesan di layar (screenshot), dan jam kejadian.
