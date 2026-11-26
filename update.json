@@ -1,16 +1,26 @@
 {
   "schema": 1,
   "latest": {
-    "version": "1.2.1",
-    "build": "3d6ebf1",
-    "released_at": "2026-11-20T14:39:00Z",
-    "size": 13847165,
-    "sha256": "2acfc02874d59884a84f98caacbd4a7dc3c1e0e842fbeaec9bd1bc6b31a25f21",
-    "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.1/kedaiin-update-1.2.1.zip",
-    "notes": "Perbaikan refund & diskon void, kegagalan cetak tidak ditelan, expected_cash tunai tanpa shift, seksi Pembaruan di UI, cek versi lewat feed publik",
+    "version": "1.2.2",
+    "build": "fd0c5dc",
+    "released_at": "2026-11-26T05:32:09Z",
+    "size": 13843666,
+    "sha256": "c8c2f5256191db685aca809ddfe7f84dd26f6571dee19daae82bed05680a4de0",
+    "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.2/kedaiin-update-1.2.2.zip",
+    "notes": "Kartu Tidak terjual pindah ke tab Ringkasan, keterangan saat CSV kosong, batas angka di 7 endpoint, dan tab Laporan bisa dipindah dengan keyboard",
     "min_from_version": "1.1.0"
   },
   "history": [
+    {
+      "version": "1.2.1",
+      "build": "3d6ebf1",
+      "released_at": "2026-11-20T14:39:00Z",
+      "size": 13847165,
+      "sha256": "2acfc02874d59884a84f98caacbd4a7dc3c1e0e842fbeaec9bd1bc6b31a25f21",
+      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.1/kedaiin-update-1.2.1.zip",
+      "notes": "Perbaikan refund & diskon void, kegagalan cetak tidak ditelan, expected_cash tunai tanpa shift, seksi Pembaruan di UI, cek versi lewat feed publik",
+      "min_from_version": "1.1.0"
+    },
     {
       "version": "1.2.0",
       "build": "ca21782",
