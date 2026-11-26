@@ -142,7 +142,8 @@ sha256sum kedaiin-update-1.2.1.zip
 **Windows (PowerShell):**
 
 ```powershell
-curl.exe -L -o kedaiin-update-1.2.1.zip "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.1/kedaiin-update-1.2.1.zip"
+curl.exe -L -o kedaiin-update-1.2.1.zip `
+  https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.1/kedaiin-update-1.2.1.zip
 Get-FileHash .\kedaiin-update-1.2.1.zip -Algorithm SHA256
 ```
 
