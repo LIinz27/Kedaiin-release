@@ -1,16 +1,26 @@
 {
   "schema": 1,
   "latest": {
-    "version": "1.2.2",
-    "build": "fd0c5dc",
-    "released_at": "2026-11-26T05:32:09Z",
-    "size": 13843666,
-    "sha256": "c8c2f5256191db685aca809ddfe7f84dd26f6571dee19daae82bed05680a4de0",
-    "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.2/kedaiin-update-1.2.2.zip",
-    "notes": "Kartu Tidak terjual pindah ke tab Ringkasan, keterangan saat CSV kosong, batas angka di 7 endpoint, dan tab Laporan bisa dipindah dengan keyboard",
+    "version": "1.2.3",
+    "build": "ab81cf5",
+    "released_at": "2026-11-26T08:16:52Z",
+    "size": 13849080,
+    "sha256": "d92143d08bb1a4627b4e0dd0371e8cac64e9f805626182a83aaf33aa75571dde",
+    "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.3/kedaiin-update-1.2.3.zip",
+    "notes": "Pembaruan bisa dipasang dari layar Pengaturan, dengan rollback otomatis ke versi lama kalau versi baru tidak sehat",
     "min_from_version": "1.1.0"
   },
   "history": [
+    {
+      "version": "1.2.2",
+      "build": "fd0c5dc",
+      "released_at": "2026-11-26T05:32:09Z",
+      "size": 13843666,
+      "sha256": "c8c2f5256191db685aca809ddfe7f84dd26f6571dee19daae82bed05680a4de0",
+      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.2/kedaiin-update-1.2.2.zip",
+      "notes": "Kartu Tidak terjual pindah ke tab Ringkasan, keterangan saat CSV kosong, batas angka di 7 endpoint, dan tab Laporan bisa dipindah dengan keyboard",
+      "min_from_version": "1.1.0"
+    },
     {
       "version": "1.2.1",
       "build": "3d6ebf1",
