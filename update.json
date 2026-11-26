@@ -1,16 +1,26 @@
 {
   "schema": 1,
   "latest": {
-    "version": "1.2.3",
-    "build": "ab81cf5",
-    "released_at": "2026-11-26T08:16:52Z",
-    "size": 13849080,
-    "sha256": "d92143d08bb1a4627b4e0dd0371e8cac64e9f805626182a83aaf33aa75571dde",
-    "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.3/kedaiin-update-1.2.3.zip",
-    "notes": "Pembaruan bisa dipasang dari layar Pengaturan, dengan rollback otomatis ke versi lama kalau versi baru tidak sehat",
+    "version": "1.2.4",
+    "build": "de4b184",
+    "released_at": "2026-11-26T12:04:49Z",
+    "size": 13894558,
+    "sha256": "8a7d9e63bc528e0ea05624d64425ed883807a474a23ec06ec8947515f46c33f7",
+    "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.4/kedaiin-update-1.2.4.zip",
+    "notes": "Cetak tiket dari perangkat stasiun: agen cetak per perangkat, Bluetooth dapur/bar bisa dipilih di layar, dan APK tablet bisa mencetak BLE tanpa Chrome",
     "min_from_version": "1.1.0"
   },
   "history": [
+    {
+      "version": "1.2.3",
+      "build": "ab81cf5",
+      "released_at": "2026-11-26T08:16:52Z",
+      "size": 13849080,
+      "sha256": "d92143d08bb1a4627b4e0dd0371e8cac64e9f805626182a83aaf33aa75571dde",
+      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.3/kedaiin-update-1.2.3.zip",
+      "notes": "Pembaruan bisa dipasang dari layar Pengaturan, dengan rollback otomatis ke versi lama kalau versi baru tidak sehat",
+      "min_from_version": "1.1.0"
+    },
     {
       "version": "1.2.2",
       "build": "fd0c5dc",
