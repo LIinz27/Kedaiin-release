@@ -266,7 +266,7 @@ Dirilis 27 November 2026, build `e518e74`. Ringkasan: pembaruan bisa diunduh ser
 - **Exclusion Windows Defender** — installer menambahkan folder instalasi ke exclusion Defender **khusus mode server** (tanpa itu pemindaian `node_modules` memperlambat start); **uninstaller mencabutnya lagi**. Kalau exclusion gagal (mesin dikelola kebijakan grup), instalasi tetap lanjut — hanya lebih lambat.
 
 **Perbaikan**
-- **Payload installer tidak lagi membawa `.worktrees/`** (186 MB sampah cabang lain) dan ada penjaga supaya tidak terulang; jadi installer 1.2.5 lebih ramping isinya daripada 1.2.4 walau nomornya lebih baru.
+- **Payload installer tidak lagi membawa `.worktrees/`** (186 MB sampah cabang lain) dan ada penjaga supaya tidak terulang; jadi isi installer 1.2.5 tidak lagi membawa 186 MB sampah itu (ukuran berkas installernya sendiri 335.673.377 byte, 1.2.4: 334.813.849 byte).
 
 **Teknis & uji**
 - **Paket**: 2.178 berkas + `manifest.json` = 32.296.519 byte setelah diekstrak (zip 15.006.636 byte); `manifest.json` → version 1.2.5, build `e518e74`, created 2026-11-27T12:42:50Z.
