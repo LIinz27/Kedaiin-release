@@ -1,107 +1,117 @@
 {
-  "schema": 1,
-  "latest": {
-    "version": "1.2.8",
-    "build": "ecb34d2",
-    "released_at": "2026-11-28T06:59:33Z",
-    "size": 15057853,
-    "sha256": "5622431788f4f7ff628ec206d33690c11f36e828f4fe2ffdeb9bc7c6a599e4e3",
-    "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.8/kedaiin-update-1.2.8.zip",
-    "notes": "6 perbaikan jalur pemasangan dari kejadian nyata saat memasang 1.2.7 (tombol Pasang tidak lagi diam, aplikasi hidup lagi lewat tugas Windows KedaiinPOS, cek health ikut port .env, paket versi sama ditolak, layar pemasangan tidak menggantung, Cargo.lock ikut versi) - tanpa fitur baru",
-    "min_from_version": "1.1.0"
+ "schema": 1,
+ "latest": {
+  "version": "1.2.9",
+  "build": "4ddc306",
+  "released_at": "2026-11-28T08:27:28Z",
+  "size": 15085419,
+  "sha256": "f71002bce4d34ab50de735b73f46f4bc5b3916ad48a213ebe1ec3af76021d7f1",
+  "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.9/kedaiin-update-1.2.9.zip",
+  "notes": "3 cacat jalur pembaruan: paket kini membawa deploy/windows/*.ps1 (skrip pemasang naik versi bersama aplikasi), watchdog dijeda lewat autostart-pause.flag saat memasang, installer menulis catatan pemasangan & menolak parameter asing dengan pesan jelas - tanpa fitur baru",
+  "min_from_version": "1.2.8"
+ },
+ "apk": {
+  "version": "1.2.9",
+  "size": 17554758,
+  "sha256": "b0f8e78f7b49439690bf00de29d4228d5abc5b95d720027962238e50b46b383e",
+  "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.9/Kedaiin-1.2.9.apk"
+ },
+ "desktop": {
+  "version": "1.2.9",
+  "size": 4916224,
+  "sha256": "bbc2c26965a88508afe38c2136b7b8e3e8d8cd52ac122c39bf86a1743b5069f1",
+  "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.9/Kedaiin-Desktop-1.2.9.exe"
+ },
+ "history": [
+  {
+   "version": "1.2.8",
+   "build": "ecb34d2",
+   "released_at": "2026-11-28T06:59:33Z",
+   "size": 15057853,
+   "sha256": "5622431788f4f7ff628ec206d33690c11f36e828f4fe2ffdeb9bc7c6a599e4e3",
+   "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.8/kedaiin-update-1.2.8.zip",
+   "notes": "6 perbaikan jalur pemasangan dari kejadian nyata saat memasang 1.2.7 (tombol Pasang tidak lagi diam, aplikasi hidup lagi lewat tugas Windows KedaiinPOS, cek health ikut port .env, paket versi sama ditolak, layar pemasangan tidak menggantung, Cargo.lock ikut versi) - tanpa fitur baru",
+   "min_from_version": "1.1.0"
   },
-  "apk": {
-    "version": "1.2.8",
-    "size": 17554754,
-    "sha256": "2717a83aea9733a8b6572ba91fd224f3e0dc6b9aa641dac7242614b7c302ec67",
-    "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.8/Kedaiin-1.2.8.apk"
+  {
+   "version": "1.2.7",
+   "build": "8ee1441",
+   "released_at": "2026-11-28T00:40:20Z",
+   "size": 15048347,
+   "sha256": "fb033e1df647a14b4c8b524371cf2d4206118bb0b7adbe7236c2bae30ce29102",
+   "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.7/kedaiin-update-1.2.7.zip",
+   "notes": "7 perbaikan QA 1.2.6 (diskon split proporsional, hierarki owner, pelayan tanpa angka uang, tunai tanpa shift, bayar kurang butuh izin, jalur darurat DB hanya loopback, daftar order pakai angka tersimpan) + pulihkan dari backup, ekspor Excel, cetak laporan shift, penanda versi baru, wizard /mulai",
+   "min_from_version": "1.1.0"
   },
-  "desktop": {
-    "version": "1.2.8",
-    "size": 4916224,
-    "sha256": "4c93a7964e2ae6300db89eafbd8a15f36927a501fac8d7bfee9ec90f5be2e711",
-    "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.8/Kedaiin-Desktop-1.2.8.exe"
+  {
+   "version": "1.2.6",
+   "build": "d67234b",
+   "released_at": "2026-11-27T15:52:20Z",
+   "size": 15024451,
+   "sha256": "7b7619ee6cbd3093e213d06afb4e3814275b33fa831aa71004bc3e799594b545",
+   "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.6/kedaiin-update-1.2.6.zip",
+   "notes": "Pengaturan dipecah per kategori (10 kategori: Umum, Penjualan, Menu & Meja, Printer, Jaringan, Keamanan, Data & Backup, Pembaruan, Lisensi & Aplikasi, Audit) + sidebar & kotak cari; tautan lama #s-... tetap hidup",
+   "min_from_version": "1.1.0"
   },
-  "history": [
-    {
-      "version": "1.2.7",
-      "build": "8ee1441",
-      "released_at": "2026-11-28T00:40:20Z",
-      "size": 15048347,
-      "sha256": "fb033e1df647a14b4c8b524371cf2d4206118bb0b7adbe7236c2bae30ce29102",
-      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.7/kedaiin-update-1.2.7.zip",
-      "notes": "7 perbaikan QA 1.2.6 (diskon split proporsional, hierarki owner, pelayan tanpa angka uang, tunai tanpa shift, bayar kurang butuh izin, jalur darurat DB hanya loopback, daftar order pakai angka tersimpan) + pulihkan dari backup, ekspor Excel, cetak laporan shift, penanda versi baru, wizard /mulai",
-      "min_from_version": "1.1.0"
-    },
-    {
-      "version": "1.2.6",
-      "build": "d67234b",
-      "released_at": "2026-11-27T15:52:20Z",
-      "size": 15024451,
-      "sha256": "7b7619ee6cbd3093e213d06afb4e3814275b33fa831aa71004bc3e799594b545",
-      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.6/kedaiin-update-1.2.6.zip",
-      "notes": "Pengaturan dipecah per kategori (10 kategori: Umum, Penjualan, Menu & Meja, Printer, Jaringan, Keamanan, Data & Backup, Pembaruan, Lisensi & Aplikasi, Audit) + sidebar & kotak cari; tautan lama #s-... tetap hidup",
-      "min_from_version": "1.1.0"
-    },
-    {
-      "version": "1.2.5",
-      "build": "e518e74",
-      "released_at": "2026-11-27T12:51:40Z",
-      "size": 15006636,
-      "sha256": "8a9a986c6740030b5972dc15a6de4831e276b1ba5d48d7021a57da9ca655924b",
-      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.5/kedaiin-update-1.2.5.zip",
-      "notes": "Pembaruan satu klik: unduh dari feed + sha256 + progres + batal; cari printer (mDNS/9100/antrean Windows/COM) & transport serial; cari server + mDNS + QR; kunci layar; backup sekarang + unduh; cetak laporan A4; autostart tahan baterai + watchdog",
-      "min_from_version": "1.1.0"
-    },
-    {
-      "version": "1.2.4",
-      "build": "de4b184",
-      "released_at": "2026-11-26T12:04:49Z",
-      "size": 13894558,
-      "sha256": "8a7d9e63bc528e0ea05624d64425ed883807a474a23ec06ec8947515f46c33f7",
-      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.4/kedaiin-update-1.2.4.zip",
-      "notes": "Cetak tiket dari perangkat stasiun: agen cetak per perangkat, Bluetooth dapur/bar bisa dipilih di layar, dan APK tablet bisa mencetak BLE tanpa Chrome",
-      "min_from_version": "1.1.0"
-    },
-    {
-      "version": "1.2.3",
-      "build": "ab81cf5",
-      "released_at": "2026-11-26T08:16:52Z",
-      "size": 13849080,
-      "sha256": "d92143d08bb1a4627b4e0dd0371e8cac64e9f805626182a83aaf33aa75571dde",
-      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.3/kedaiin-update-1.2.3.zip",
-      "notes": "Pembaruan bisa dipasang dari layar Pengaturan, dengan rollback otomatis ke versi lama kalau versi baru tidak sehat",
-      "min_from_version": "1.1.0"
-    },
-    {
-      "version": "1.2.2",
-      "build": "fd0c5dc",
-      "released_at": "2026-11-26T05:32:09Z",
-      "size": 13843666,
-      "sha256": "c8c2f5256191db685aca809ddfe7f84dd26f6571dee19daae82bed05680a4de0",
-      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.2/kedaiin-update-1.2.2.zip",
-      "notes": "Kartu Tidak terjual pindah ke tab Ringkasan, keterangan saat CSV kosong, batas angka di 7 endpoint, dan tab Laporan bisa dipindah dengan keyboard",
-      "min_from_version": "1.1.0"
-    },
-    {
-      "version": "1.2.1",
-      "build": "3d6ebf1",
-      "released_at": "2026-11-20T14:39:00Z",
-      "size": 13847165,
-      "sha256": "2acfc02874d59884a84f98caacbd4a7dc3c1e0e842fbeaec9bd1bc6b31a25f21",
-      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.1/kedaiin-update-1.2.1.zip",
-      "notes": "Perbaikan refund & diskon void, kegagalan cetak tidak ditelan, expected_cash tunai tanpa shift, seksi Pembaruan di UI, cek versi lewat feed publik",
-      "min_from_version": "1.1.0"
-    },
-    {
-      "version": "1.2.0",
-      "build": "ca21782",
-      "released_at": "2026-11-20T00:00:00Z",
-      "size": 13837631,
-      "sha256": "cc38b5da656d6d3b8eedbd04bb2ce7e7b555726a284d45435c5b5b8c4d5d050d",
-      "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.0/kedaiin-update-1.2.0.zip",
-      "notes": "Sistem desain baru, 7 layar redesain",
-      "min_from_version": "1.1.0"
-    }
-  ]
+  {
+   "version": "1.2.5",
+   "build": "e518e74",
+   "released_at": "2026-11-27T12:51:40Z",
+   "size": 15006636,
+   "sha256": "8a9a986c6740030b5972dc15a6de4831e276b1ba5d48d7021a57da9ca655924b",
+   "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.5/kedaiin-update-1.2.5.zip",
+   "notes": "Pembaruan satu klik: unduh dari feed + sha256 + progres + batal; cari printer (mDNS/9100/antrean Windows/COM) & transport serial; cari server + mDNS + QR; kunci layar; backup sekarang + unduh; cetak laporan A4; autostart tahan baterai + watchdog",
+   "min_from_version": "1.1.0"
+  },
+  {
+   "version": "1.2.4",
+   "build": "de4b184",
+   "released_at": "2026-11-26T12:04:49Z",
+   "size": 13894558,
+   "sha256": "8a7d9e63bc528e0ea05624d64425ed883807a474a23ec06ec8947515f46c33f7",
+   "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.4/kedaiin-update-1.2.4.zip",
+   "notes": "Cetak tiket dari perangkat stasiun: agen cetak per perangkat, Bluetooth dapur/bar bisa dipilih di layar, dan APK tablet bisa mencetak BLE tanpa Chrome",
+   "min_from_version": "1.1.0"
+  },
+  {
+   "version": "1.2.3",
+   "build": "ab81cf5",
+   "released_at": "2026-11-26T08:16:52Z",
+   "size": 13849080,
+   "sha256": "d92143d08bb1a4627b4e0dd0371e8cac64e9f805626182a83aaf33aa75571dde",
+   "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.3/kedaiin-update-1.2.3.zip",
+   "notes": "Pembaruan bisa dipasang dari layar Pengaturan, dengan rollback otomatis ke versi lama kalau versi baru tidak sehat",
+   "min_from_version": "1.1.0"
+  },
+  {
+   "version": "1.2.2",
+   "build": "fd0c5dc",
+   "released_at": "2026-11-26T05:32:09Z",
+   "size": 13843666,
+   "sha256": "c8c2f5256191db685aca809ddfe7f84dd26f6571dee19daae82bed05680a4de0",
+   "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.2/kedaiin-update-1.2.2.zip",
+   "notes": "Kartu Tidak terjual pindah ke tab Ringkasan, keterangan saat CSV kosong, batas angka di 7 endpoint, dan tab Laporan bisa dipindah dengan keyboard",
+   "min_from_version": "1.1.0"
+  },
+  {
+   "version": "1.2.1",
+   "build": "3d6ebf1",
+   "released_at": "2026-11-20T14:39:00Z",
+   "size": 13847165,
+   "sha256": "2acfc02874d59884a84f98caacbd4a7dc3c1e0e842fbeaec9bd1bc6b31a25f21",
+   "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.1/kedaiin-update-1.2.1.zip",
+   "notes": "Perbaikan refund & diskon void, kegagalan cetak tidak ditelan, expected_cash tunai tanpa shift, seksi Pembaruan di UI, cek versi lewat feed publik",
+   "min_from_version": "1.1.0"
+  },
+  {
+   "version": "1.2.0",
+   "build": "ca21782",
+   "released_at": "2026-11-20T00:00:00Z",
+   "size": 13837631,
+   "sha256": "cc38b5da656d6d3b8eedbd04bb2ce7e7b555726a284d45435c5b5b8c4d5d050d",
+   "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.0/kedaiin-update-1.2.0.zip",
+   "notes": "Sistem desain baru, 7 layar redesain",
+   "min_from_version": "1.1.0"
+  }
+ ]
 }
