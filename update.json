@@ -1,28 +1,38 @@
 {
  "schema": 1,
  "latest": {
-  "version": "1.2.6",
-  "build": "d67234b",
-  "released_at": "2026-11-27T15:52:20Z",
-  "size": 15024451,
-  "sha256": "7b7619ee6cbd3093e213d06afb4e3814275b33fa831aa71004bc3e799594b545",
-  "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.6/kedaiin-update-1.2.6.zip",
-  "notes": "Pengaturan dipecah per kategori (10 kategori: Umum, Penjualan, Menu & Meja, Printer, Jaringan, Keamanan, Data & Backup, Pembaruan, Lisensi & Aplikasi, Audit) + sidebar & kotak cari; tautan lama #s-... tetap hidup",
+  "version": "1.2.7",
+  "build": "8ee1441",
+  "released_at": "2026-11-28T00:40:20Z",
+  "size": 15048347,
+  "sha256": "fb033e1df647a14b4c8b524371cf2d4206118bb0b7adbe7236c2bae30ce29102",
+  "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.7/kedaiin-update-1.2.7.zip",
+  "notes": "7 perbaikan QA 1.2.6 (diskon split proporsional, hierarki owner, pelayan tanpa angka uang, tunai tanpa shift, bayar kurang butuh izin, jalur darurat DB hanya loopback, daftar order pakai angka tersimpan) + pulihkan dari backup, ekspor Excel, cetak laporan shift, penanda versi baru, wizard /mulai",
   "min_from_version": "1.1.0"
  },
  "apk": {
-  "version": "1.2.6",
-  "size": 17544226,
-  "sha256": "79dacfefd4689a46bb04231da6d7f7a5a35d9aaf7e3349577f43a950061df79f",
-  "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.6/Kedaiin-1.2.6.apk"
+  "version": "1.2.7",
+  "size": 17550026,
+  "sha256": "999137060bfcee773a24c3a5c673444d957bc0bf8cc50b85e21b6650de8288f1",
+  "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.7/Kedaiin-1.2.7.apk"
  },
  "desktop": {
-  "version": "1.2.6",
+  "version": "1.2.7",
   "size": 4916224,
-  "sha256": "e00ac18a826f94d8f570bea4e7463f23fc73f64952084e629005ffeb8e4ffb27",
-  "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.6/Kedaiin-Desktop-1.2.6.exe"
+  "sha256": "93a91580e17550c7c399020ea8333c24cd92ffcd5b83f0bf2df519effb152c52",
+  "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.7/Kedaiin-Desktop-1.2.7.exe"
  },
  "history": [
+  {
+   "version": "1.2.6",
+   "build": "d67234b",
+   "released_at": "2026-11-27T15:52:20Z",
+   "size": 15024451,
+   "sha256": "7b7619ee6cbd3093e213d06afb4e3814275b33fa831aa71004bc3e799594b545",
+   "url": "https://github.com/LIinz27/Kedaiin-release/releases/download/v1.2.6/kedaiin-update-1.2.6.zip",
+   "notes": "Pengaturan dipecah per kategori (10 kategori: Umum, Penjualan, Menu & Meja, Printer, Jaringan, Keamanan, Data & Backup, Pembaruan, Lisensi & Aplikasi, Audit) + sidebar & kotak cari; tautan lama #s-... tetap hidup",
+   "min_from_version": "1.1.0"
+  },
   {
    "version": "1.2.5",
    "build": "e518e74",
